@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="/src/css/style.css">
+		<title>player.camp</title>
+	</head>
+	<body>
+		<div id="wrap" class="home">
+			<header id="header">
+				<div class="wrap">
+					<h1>
+						<a href="/">player</a>
+					</h1>
+					<div class="gnb">
+						<ul>
+							<li><a href="/">Games</a></li>
+							<li><a href="/">Teams</a></li>
+							<li><a href="/">Lesson</a></li>
+							<li><a href="/">Place</a></li>
+						</ul>
+					</div>
+					<div class="snb">
+						<ul>
+							<li><input type="radio" name="category" id="c_0" checked><label for="c_0">#전체</label></li>
+							<li><input type="radio" name="category" id="c_1"><label for="c_1">#풋살</label></li>
+							<li><input type="radio" name="category" id="c_2"><label for="c_2">#축구</label></li>
+							<li><input type="radio" name="category" id="c_3"><label for="c_3">#농구</label></li>
+							<li><input type="radio" name="category" id="c_4"><label for="c_4">#야구</label></li>
+						</ul>
+					</div>
+					<div class="rnb">
+						<ul>
+							<li><label for="signio">회원가입/로그인</label></li>
+							<li><a href="/">고객센터</a></li>
+							<li><a href="/">도움말</a></li>
+						</ul>
+					</div>
+					<input id="signio" type="checkbox" name="signio" class="p_btn">
+					<div class="popup signio">
+						<label class="dim" style="background:none;" for="signio">닫기</label>
+						<div class="area">
+							<form name="signio_form">
+								<button class="facebook"><img src="https://facebook.com/favicon.ico" alt="facebook 로그인"></button>
+								<button class="google"><img src="https://www.google.co.kr/favicon.ico" alt="google 로그인"></button>
+								<button class="twitter"><img src="https://twitter.com/favicon.ico" alt="twitter 로그인"></button>
+								<button class="github"><img src="https://github.com/favicon.ico" alt="github 로그인"></button>
+							</form>
+						</div>
+					</div>
+					<div class="search">
+						<input type="text" placeholder="스포츠 검색">
+					</div>
+					<div class="toolbar">
+						<div class="filter">
+							<select name="" style=" width: 50px; ">
+								<option>지역</option>
+								<option>서울</option>
+								<option>인천/경기</option>
+								<option>부산/울산/경남</option>
+								<option>대전/충청/세종</option>
+								<option>광주/전라</option>
+								<option>강원</option>
+								<option>대구/경북</option>
+								<option>제주</option>
+								<option>기타지역</option>
+							</select>
+							<select name="">
+								<option>요일/시간</option>
+								<option>주중</option>
+								<option>주말</option>
+								<option>오전</option>
+								<option>오후</option>
+								<option>저녁</option>
+								<option>새벽</option>
+							</select>
+							<select name="" style=" width: 80px; ">
+								<option>참여비용</option>
+								<option>무료</option>
+								<option>~10,000</option>
+								<option>10,000~25,000</option>
+								<option>25,000~40,000</option>
+								<option>40,000~99,000</option>
+								<option>99,000</option>
+							</select>
+						</div>
+						<div class="etc">
+							<label for="gameio">경기 등록</label>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main">
+				<div id="app" class="games">
+					<div class="article">
+						<div class="title">
+							<h3>채성우님 이런 경기는 어떠세요?</h3>
+						</div>
+						<div class="list">
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp01.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp02.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp03.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="title">
+							<h3>서울 중랑구 평일 경기 리스트</h3>
+						</div>
+						<div class="list">
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp01.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp02.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp03.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp04.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp05.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<div class="image">
+									<img src="/src/img/temp06.jpg">
+								</div>
+								<a class="area" href="#">
+									<span class="info">
+										<span class="quota">
+											<em>5/12</em>
+										</span>
+										<span class="place">
+											<em>서울 동대문</em>
+										</span>
+										<span class="vs">
+											<span class="home">
+												<em>플레이 메이커즈</em>
+											</span>
+											<span class="away">
+												<em>아레스</em>
+											</span>
+										</span>
+										<span class="date">
+											<em>2017.06.10</em>
+										</span>
+										<span class="price">
+											<em>30,000</em>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer id="footer">
+				<div class="wrap">
+					<div class="copyright">
+						<p>©2017 PLAYER.CAMP, Inc. All Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popups">
+			<input class="p_btn" id="gameio" type="checkbox">
+			<div class="popup gameio">
+				<label class="dim" for="gameio"></label>
+				<div class="area" style="width:400px; height:410px;">
+					<div class="title">
+						<h4>경기 등록</h4>
+					</div>
+					<form name="gameio_form">
+						<div class="col2">
+							<select name="gameio_home">
+								<option>플레이팀 선택</option>
+								<option>플레이메이커즈</option>
+								<option>아레스</option>
+							</select>
+							<select name="gameio_away">
+								<option>상대팀 선택</option>
+								<option>씨즈</option>
+								<option>WDB</option>
+							</select>
+						</div>
+						<input type="text" name="gameio_play_date" placeholder="매치 날짜">
+						<div class="col2">
+							<input type="text" name="gameio_start_date" placeholder="접수 시작일">
+							<input type="text" name="gameio_last_date" placeholder="접수 마감일">
+						</div>
+						<input type="text" name="gameio_last_date" placeholder="참가가능 인원">
+						<input type="text" name="gameio_price" placeholder="참가비">
+						<button>등록</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	
+		
+		<script id="Tpl" type="text/template">
+			
+		</script>		
+		
+		
+		
+
+		<script src="/src/js/scv.js"></script>
+		<script src="/src/js/script.js"></script>
+	</body>
+</html>

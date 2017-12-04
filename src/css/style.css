@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{margin:0; padding:0; border:0; list-style:none; text-decoration:none; line-height:1; font-style:normal; font-family: 'Noto Sans KR', sans-serif; color:#000; background:none;}
+body{overflow-y:scroll;}
+#wrap {min-width:870px;}
+#wrap #header{position:relative;}
+
+#header {overflow:hidden; padding-top:38px; border-bottom:1px solid #ddd;}
+#header h1{position:relative; display:inline-block; padding: 20px 0 20px 27px; z-index:1;}
+#header h1 a{display:block; text-transform: uppercase; font-size: 20px; letter-spacing:6px;}
+
+#header .gnb{position: absolute; top: 0; left: 0; width: 100%; height: 38px; border-bottom: 1px solid #ddd;}
+#header .gnb ul li{float: left; padding: 10px 20px; border-right: 1px solid #ddd; width: 50px; text-align: center;} 
+#header .gnb ul li a{display:block; font-size:12px; line-height:18px; color:#999;}
+#header .gnb ul li a:hover{color:#000;}
+
+#header .rnb{position: absolute; top: 0; right: 10px;}
+#header .rnb ul li{float:left; padding: 8px 10px;}
+#header .rnb ul li+li{margin-left:-1px;}
+#header .rnb ul li *{display:block; font-size:12px; line-height:22px; color:#999;}
+#header .rnb ul li *:hover{color:#000;}
+
+#header .snb{position:absolute; left:0; top:46px; width:100%; text-align:center;}
+#header .snb ul{display:inline-block;}
+#header .snb ul li{float:left; padding: 0 10px;}
+#header .snb ul li+li{margin-left:-1px;}
+#header .snb ul li input{display:none;}
+#header .snb ul li label{display:block; padding:10px; font-size:14px; font-weight:bold; line-height:22px; color:#aaa; cursor:pointer;}
+#header .snb ul li a:hover,
+#header .snb ul li input:checked + label{color:#000;}
+
+
+#header .toolbar{position:relative; padding:19px 20px; border-top:1px solid #ddd; background-color:#f9f9f9;}
+#header .toolbar .etc{position:absolute; right:30px; top:20px;}
+#header .toolbar .etc label{ font-size:13px; cursor:pointer;}
+#header .filter select+select{margin-left:10px;}
+#header .filter select{border:0; font-size:14px; background-color:#f9f9f9;}
+
+#header .search{position:absolute; top:48px; right:20px; }
+#header .search input{padding: 5px 10px; border: 1px solid #ddd; border-radius: 6px; width: 200px; height: 40px; font-size: 14px; box-sizing: border-box; transition-duration: 0.3s;}
+#header .search input:focus{width:200px;}
+
+#footer {padding:20px; border-top:1px solid #ddd; background-color: #f2f2f2;}
+#footer .copyright p{font-size:12px; color:#aaa;}
+
+.games {margin:50px 0 70px;}
+.games .article{margin:auto; width:890px;}
+.games .article+.article{padding-top:25px;}
+.games .article>.title{text-align:left;}
+.games .list{overflow:hidden; margin:10px -5px;}
+.games .list .item{position:relative; overflow:hidden; float:left; vertical-align:top; width:280px; height:180px; margin:10px 7px;}
+.games .list .item .image img{display:block; width:100%; height:180px; transform:scale(1); transition-duration:0.3s;}
+.games .list .item:hover .image img{transform:scale(1.1);}
+.games .list .item a.area{display:table; position:absolute; left:0; bottom:0; width:100%; height:100%;  background-color:rgba(0,0,0,0.6); box-sizing:border-box;}
+
+.games .list .item .info{display:table-cell; padding-top:20px; vertical-align:top; text-align:center;}
+.games .list .item .info span{display:block;}
+.games .list .item .info *{color:#fff;}
+.games .list .item .info .place{margin-bottom:5px; font-size:12px;}
+.games .list .item .info .date{margin-top:10px;}
+.games .list .item .info .date em{font-size:13px;}
+.games .list .item .info .quota{display:inline-block; margin-bottom:15px; padding:5px; border:1px solid #fff; border-radius:5px; font-size:11px;}
+.games .list .item .info .quota em:after{content:"명";}
+.games .list .item .info .price{display:none;}
+
+.games .list .item .info .vs{position:relative; display:inline-block; padding-bottom:18px;}
+.games .list .item .info .vs>span{position:relative; display:inline-block;}
+.games .list .item .info .vs *{font-size:16px; font-weight:bold;}
+.games .list .item .info .vs .home:after{content:" : "}
+.games .list .item .info .vs:after{content:""; position:absolute; bottom:0; left:0; right:0; margin:auto; width:30px; height:3px; background:#ffd014;}
+
+.p_btn:checked+.popup{display:block;}
+.p_btn{display:none;}
+.popup{display:none;}
+.popup .close{display:none; position:absolute; top:-20px; left:0; color:#fff;}
+.popup .area{position:absolute; z-index:11;}
+.popup .area[style]{margin:auto; left:0; top:0; right:0; bottom:0; background-color:#fff; box-sizing:border-box;}
+.popup .dim{}
+.popup .dim{position:fixed; overflow:hidden; text-indent:-9999px; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:10;}
+
+.signio .area{top: 43px; right: 105px; padding: 12px 10px; border: 1px solid #ddd; background: #fff;}
+.signio form button{cursor:pointer;}
+.signio form button+button{margin-left:5px;}
+.signio form button img{width:23px;}
+
+.gameio .area{border-radius:4px;}
+.gameio .area .title{margin:25px 0 10px; text-align:center; font-size:18px;}
+.gameio form{padding-top: 20px;}
+
+.gameio form .col2{overflow:hidden; margin:0 15%;}
+.gameio form .col2>*{float:left; margin:0; width:48%;}
+.gameio form .col2>*+*{margin:0 0 0 4%}
+.gameio form button,
+.gameio form select,
+.gameio form input{display:block; margin:0 15%; padding:10px; border:1px solid #ddd; border-radius:2px; width:70%; box-sizing:border-box;}
+.gameio .area form>*+*{margin-top:10px;}
+.gameio .area form button{border:0; background:#000; color:#fff; cursor:pointer;}
+.gameio .area form button:hover{background:#ffd014;}
+
+
+
+
+
+
+
+
+
+
+
+
+
